@@ -1,2 +1,5 @@
-package com.chorlock.Sorting;public class BubbleSort2 {
+package com.chorlock.Sorting;
+
+public class BubbleSort2 {
+    
 }
