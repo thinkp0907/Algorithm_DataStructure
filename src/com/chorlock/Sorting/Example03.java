@@ -2,7 +2,7 @@ package com.chorlock.Sorting;
 
 import java.util.Scanner;
 
-public class BubbleSort2 {
+public class Example03 {
 
     static void swap(int[] a, int idx1, int idx2) { // a, 5, 6
         int t = a[idx1];            // t = a[5]
@@ -34,4 +34,27 @@ public class BubbleSort2 {
         System.out.println("교환을 " + scnt + "회 했습니다.");
     }
 
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("버블 정렬(버전2)");
+        System.out.printf("요솟수:");
+        int nx = scanner.nextInt();
+        int[] x = new int[nx];
+
+        for (int i = 0; i < nx; i++) {
+            System.out.printf("x[" + i + "]: ");
+            x[i] = scanner.nextInt();
+        }
+
+        bubbleSort(x, nx);
+
+        System.out.println("오름차순으로 정렬했습니다.");
+        for (int i = 0; i < nx; i++) {
+            System.out.println("x["+i+"]="+x[i]);
+        }
+
+
+    }
 }
+
